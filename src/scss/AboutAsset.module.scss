@@ -1,0 +1,11 @@
+.aboutAsset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(38, 37, 37);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  &__p{
+    background-color: rgb(38, 37, 37);
+  }
+}

@@ -1,0 +1,13 @@
+.searchbox {
+  width: 100%;
+  padding: 0 0 15px;
+  &input{
+    height: 35px;
+    color:  rgb(218, 219, 220);
+    padding-left: 5px;
+    border: 1px solid rgb(218, 219, 220);
+    border-radius: 5px;
+    background-color:  rgb(38, 37, 37);
+    width: 100%;
+  }
+}
