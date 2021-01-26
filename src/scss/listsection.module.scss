@@ -1,9 +1,10 @@
 .listsection {
   display: flex;
   flex-direction: column;
-
+  max-height: 100%;
   width: 400px;
   margin: 10px;
+  overflow: scroll;
 }
 .title {
   color: rgb(218, 219, 220);

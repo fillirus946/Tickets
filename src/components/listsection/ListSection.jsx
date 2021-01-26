@@ -4,6 +4,8 @@ import st from '../../scss/listsection.module.scss'
 import SearchBox from "./SearchBox";
 
 function ListSection(props) {
+console.log(props.data)
+ 
   return (
     <div className={st.listsection}>
       <SearchBox/>
