@@ -3,7 +3,7 @@ import React from 'react'
 import st from '../../scss/listsection.module.scss'
 import SearchBox from "./SearchBox";
 
-function ListSection() {
+function ListSection(props) {
   return (
     <div className={st.listsection}>
       <SearchBox/>
@@ -17,7 +17,7 @@ function ListSection() {
             <p>status</p>
           </div>
         </div>
-        <TicketsList/>
+        <TicketsList data={props.data}/>
       </div>
     </div>
   )

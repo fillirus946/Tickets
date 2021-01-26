@@ -2,7 +2,7 @@ import React from 'react'
 import st from '../../scss/Ticket.module.scss'
 import profileIcon from "../../icon/profileicon.webp";
 
-function Ticket() {
+function Ticket(props) {
   return (
     <div className={st.ticket}>
       <div className={st.ticket__wrapper}>
