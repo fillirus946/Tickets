@@ -2,12 +2,10 @@ import React from 'react'
 import st from '../../scss/TicketList.module.scss'
 import Ticket from "./Ticket";
 
-function TicketsList(props) {
+function TicketsList({data, getAndSendTicketId}) {
 
-let data = props.data
-console.log(data)
-  const dataMapping=()=>(props.data.map((item)=><Ticket data={item.number}/>))
-  console.log(props.data)
+
+  const dataMapping=()=>(data.map((item)=><Ticket  asset={item.asset.name} reportedTime={item.reportedTime} avatar={item.owner.avatar} ticketId={item.ticketId} key={item.ticketId} getAndSendTicketId={getAndSendTicketId}/>))
   return (
     <div className={st.ticketlist}>
       {dataMapping()}

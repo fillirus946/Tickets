@@ -10,13 +10,15 @@
   }
   &__imgWrapper {
     margin-right: 35px;
-    background-color: aliceblue;
     height: 30px;
     width: 30px;
     border-radius: 30px;
   }
+  &__wrapper {
+    margin: 10px;
+  }
 }
-
 .icon{
+  border-radius: 30px;
   width: 30px;
 }

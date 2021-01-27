@@ -13,13 +13,17 @@
     max-width: 380px;
     border-bottom: 2px solid rgb(31, 31, 31) ;
   }
+  &__wrapper:hover{
+    border: 1px solid rgb(213, 211, 211) ;
+  }
+
   .icon{
     width: 30px;
+    border-radius: 30px;
   }
 
   &__imgWrapper {
     margin-right: 35px;
-    background-color: aliceblue;
     height: 30px;
     border-radius: 30px;
   }

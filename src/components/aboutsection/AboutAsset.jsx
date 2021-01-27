@@ -1,23 +1,26 @@
 import React from 'react'
 import st from '../../scss/AboutAsset.module.scss'
 
-function AboutAsset() {
+function AboutAsset({name, geocode, kmFrom, kmTo}) {
   return (
     <div className={st.aboutAsset}>
      <p className={st.aboutAsset__p}>Asset</p>
-     <div>
+     <div className={st.aboutAsset__wrapper}>
        <div>
          <p>name</p>
-         <div>12</div>
+         <div>{name}</div>
        </div>
        <div>
          <p>geocode</p>
-         <div>1231</div>
+         <div>{geocode}</div>
        </div>
        <div>
-         <p>Asset</p>
+         <p>Location</p>
          <div>
-           123213
+         {kmFrom}
+         </div>
+         <div>
+         {kmTo}
          </div>
        </div>
      </div>

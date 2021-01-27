@@ -1,9 +1,7 @@
 .app {
 
-  height: 100vh;
+  height: 100vh ;
   background-color: rgb(38, 37, 37);
-  padding: 15px;
-  height: 100%;
 }
 
 .title {
@@ -14,6 +12,14 @@
 }
 
 .sections{
-  height: 92vh;
+  height: 100%;
+}
+.listsection{
+  height: 100%;
+}
+
+.wrapper{
+  height: 94vh;
   display: flex;
+  flex-direction: row;
 }
