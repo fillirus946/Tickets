@@ -4,8 +4,6 @@ import st from '../../scss/listsection.module.scss'
 import SearchBox from "./SearchBox";
 
 function ListSection({data, getAndSendTicketId}) {
-
- 
   return (
     <div className={st.listsection}>
       <SearchBox/>

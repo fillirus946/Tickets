@@ -22,7 +22,6 @@ useEffect( () => {
       setData(data);
     }
     getData()
-    console.log(data)
   }, []);
 
   const getAndSendTicketId=(id)=>{
@@ -31,7 +30,6 @@ useEffect( () => {
  const filterAndSetTicket=(id, item)=>{
     if(item.ticketId === id){
       setTicket(item)
-      console.log(id)
     }
   }
 

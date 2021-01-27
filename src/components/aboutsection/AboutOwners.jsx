@@ -11,7 +11,7 @@ function AboutOwners({avatar, firstName, lastName, specialities}) {
         </div>
         <div>
         <p>{firstName} {lastName}</p>
-        <p>{specialities ? specialities.map((item)=><p>{item}</p>) : 'there are no any specialities'}</p>
+        <div>{specialities ? specialities.map((item)=><p key=''>{item}</p>) : 'there are no any specialities'}</div>
         </div>
         
     </div>

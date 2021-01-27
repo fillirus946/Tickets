@@ -5,7 +5,7 @@ import AboutDetails from './AboutDetails'
 import AboutOwners from './AboutOwners'
 
 function AboutSection({ticket}) {
-console.log(ticket)
+
   if(ticket){
     return(
       <div className={st.aboutSection}>
