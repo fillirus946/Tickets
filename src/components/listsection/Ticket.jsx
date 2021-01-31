@@ -1,14 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import st from '../../scss/Ticket.module.scss'
+import { Context } from '../context'
 
-function Ticket({asset, reportedTime, avatar, ticketId, getAndSendTicketId}) {
 
-const ShowTicket=(id)=>{
-  getAndSendTicketId(id)
-}
+function Ticket({asset, reportedTime, avatar, ticketId}) {
+
+const {getAndSendTicketId} = useContext(Context)
 
   return (
-    <div onClick={()=>ShowTicket(ticketId)} className={st.ticket}>
+    <div onClick={()=>getAndSendTicketId(ticketId)} className={st.ticket}>
       <div className={st.ticket__wrapper}>
       <div className={st.ticket__imgWrapper}><img className={st.icon} src={avatar} alt=""/></div>
       <div className={st.ticket__info}>

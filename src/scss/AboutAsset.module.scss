@@ -11,4 +11,16 @@
   &__wrapper {
     margin: 10px;
   }
+  &__name{
+    padding-bottom: 10px;
+  }
+  &__geocode{
+    padding-bottom: 10px;
+  }
+  &__location{
+    &__locationkm{
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }

@@ -1,11 +1,20 @@
-import React from 'react'
+import React, {useContext}  from 'react'
 import st from '../../scss/TicketList.module.scss'
 import Ticket from "./Ticket";
+import {Context} from '../context'
 
-function TicketsList({data, getAndSendTicketId}) {
 
+function TicketsList() {
 
-  const dataMapping=()=>(data.map((item)=><Ticket asset={item.asset.name} reportedTime={item.reportedTime} avatar={item.owner.avatar} ticketId={item.ticketId} key={item.ticketId} getAndSendTicketId={getAndSendTicketId}/>))
+const {data} = useContext(Context)
+
+  const dataMapping=()=>(data.map((item)=><Ticket 
+                                              asset={item.asset.name}
+                                              reportedTime={item.reportedTime}
+                                              avatar={item.owner.avatar}
+                                              ticketId={item.ticketId}
+                                              key={item.ticketId}
+                                              />))
   return (
     <div className={st.ticketlist}>
       {dataMapping()}

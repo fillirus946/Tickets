@@ -9,13 +9,16 @@
     background-color: rgb(38, 37, 37);
   }
   &__imgWrapper {
-    margin-right: 35px;
+    margin-right: 10px;
     height: 30px;
     width: 30px;
     border-radius: 30px;
   }
   &__wrapper {
+    align-items: center;
     margin: 10px;
+    display: flex;
+    flex-direction: row;
   }
 }
 .icon{

@@ -4,6 +4,8 @@ import st from '../../scss/listsection.module.scss'
 import SearchBox from "./SearchBox";
 
 function ListSection({data, getAndSendTicketId}) {
+
+
   return (
     <div className={st.listsection}>
       <SearchBox/>
@@ -16,7 +18,7 @@ function ListSection({data, getAndSendTicketId}) {
             <p>status</p>
           </div>
         </div>
-        <TicketsList data={data} getAndSendTicketId={getAndSendTicketId}/>
+        <TicketsList/>
       </div>
     </div>
   )

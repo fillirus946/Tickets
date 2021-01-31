@@ -5,24 +5,26 @@ function AboutAsset({name, geocode, kmFrom, kmTo}) {
   
   return (
   <div className={st.aboutAsset}>
-    <p className={st.aboutAsset__p}>Asset</p>
+    <p className={st.aboutAsset__p}>Asset:</p>
     <div className={st.aboutAsset__wrapper}>
-      <div>
-        <p>name</p>
+      <div className={st.aboutAsset__name}>
+        <p>Name:</p>
         <div>{name}</div>
       </div>
-      <div>
-        <p>geocode</p>
+      <div className={st.aboutAsset__geocode}>
+        <p>Geocode:</p>
         <div>{geocode}</div>
       </div>
-      <div>
-        <p>Location</p>
-        <div>
-        {kmFrom}
-        </div>
-        <div>
-        {kmTo}
-        </div>
+      <div className={st.aboutAsset__location}>
+        <p>Location:</p>
+          <div className={st.aboutAsset__locationkm}>
+            <div>
+            {kmFrom}
+            </div>
+            <div>
+            {kmTo}
+            </div>
+          </div>
       </div>
     </div>
 

@@ -1,6 +1,7 @@
 .ticketlist{
-  max-height: 81.5vh;
+  max-height: 81vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   color: rgb(218, 219, 220);
   background-color: rgb(73, 72, 72);
 }

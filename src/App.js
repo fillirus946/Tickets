@@ -4,14 +4,13 @@ import AboutSection from "./components/aboutsection/AboutSection";
 import ListSection from './components/listsection/ListSection';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
-
+import {Context} from './components/context'
 
 
 function App() {
 
   const [data, setData] = useState([]);
   const [ticket, setTicket] = useState(0)
- 
 
 useEffect( () => {
   const getData= async ()=>{
@@ -26,25 +25,27 @@ useEffect( () => {
 
   const getAndSendTicketId=(id)=>{
         data.filter((item)=>filterAndSetTicket(id, item))
-  }  
- const filterAndSetTicket=(id, item)=>{
+  } 
+  const filterAndSetTicket=(id, item)=>{
     if(item.ticketId === id){
       setTicket(item)
     }
   }
 
   return (
-    <div className={st.app}>
-    <div className={st.sections}>
-    <div className={st.title}>Tickets</div>
-    <div className={st.wrapper}>
-      <div className = {st.listsection}>
-      <ListSection data={data} getAndSendTicketId={getAndSendTicketId} />
+    <Context.Provider value={{getAndSendTicketId, data, ticket}}>
+      <div className={st.app}>
+        <div className={st.sections}>
+        <div className={st.title}>Tickets</div>
+        <div className={st.wrapper}>
+          <div className = {st.listsection}>
+          <ListSection/>
+          </div>
+          <AboutSection/>
+        </div>
+        </div>
       </div>
-      <AboutSection ticket={ticket}/>
-    </div>
-    </div>
-    </div>
+    </Context.Provider>
   );
 }
 
